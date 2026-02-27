@@ -21,8 +21,8 @@ Sistema bancario completo con autenticación de usuarios, desarrollado con **Nod
 ### 1. Levantar la Base de Datos
 
 ```bash
-cd cuenta-bancaria
-docker-compose up -d
+# Asegúrate de tener configurado el archivo .env (ver .env.example)
+docker compose up -d
 ```
 
 ### 2. Iniciar el Backend
@@ -324,6 +324,10 @@ npm install
 ### Error: "Port 3000 is already in use"
 
 El backend ya está corriendo en otro terminal. Usa ese terminal o ciérralo con `Ctrl+C`.
+
+### Error: "Failed to bind host port 0.0.0.0:3306" (Docker)
+
+Si el puerto 3306 ya está en uso por otra base de datos de tu sistema, el contenedor no arrancará. Por defecto, este proyecto utiliza el puerto **33066** para evitar este conflicto. Verifica tu archivo `docker-compose.yml` y `.env`.
 
 ### Error: "Credenciales inválidas"
 
