@@ -1,9 +1,9 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 import ProtectedRoute from './componentes/ProtectedRoute'
+import 'tailwindcss'
 
 const root = document.getElementById('root')
 
