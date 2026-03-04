@@ -12,6 +12,7 @@ function Button(props) {
                 transition-all duration-200 transform hover:scale-[1.02]
                 shadow-lg hover:shadow-xl
               "
+      onClick={props.onClick}
     >
       {props.texto}
     </button>
