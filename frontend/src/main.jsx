@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 import ProtectedRoute from './componentes/ProtectedRoute'
 import 'tailwindcss'
+import './index.css'
 
 const root = document.getElementById('root')
 
